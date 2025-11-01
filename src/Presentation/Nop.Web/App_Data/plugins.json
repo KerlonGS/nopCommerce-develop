@@ -1,0 +1,122 @@
+﻿{
+  "InstalledPluginNames": [
+    "Obsolete field, using only for compatibility"
+  ],
+  "InstalledPlugins": [
+    {
+      "SystemName": "Payments.PayPalCommerce",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "DiscountRequirement.MustBeAssignedToCustomerRole",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "CurrencyExchange.ECB",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.AzureBlob",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.Brevo",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.CloudflareImages",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.Dynamics365",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.NopMobileApp",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.OmnibusDirective",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.Omnisend",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.PowerBI",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.RFQ",
+      "Version": "5.00.2"
+    },
+    {
+      "SystemName": "Misc.WebApi.Frontend",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Misc.Zettle",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "MultiFactorAuth.GoogleAuthenticator",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Payments.CheckMoneyOrder",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Payments.Manual",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Pickup.PickupInStore",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Search.Lucene",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Shipping.FixedByWeightByTotal",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Shipping.UPS",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Tax.Avalara",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Tax.FixedOrByCountryStateZip",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Widgets.AccessiBe",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Widgets.FacebookPixel",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Widgets.GoogleAnalytics",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "Widgets.Swiper",
+      "Version": "5.00.1"
+    },
+    {
+      "SystemName": "ExternalAuth.Facebook",
+      "Version": "5.00.1"
+    }
+  ],
+  "PluginNamesToUninstall": [],
+  "PluginNamesToDelete": [],
+  "PluginNamesToInstall": []
+}
