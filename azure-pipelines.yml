@@ -1,0 +1,31 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: UseDotNet@2
+  displayName: "Instalar .NET SDK 9"
+  inputs:
+    packageType: 'sdk'
+    version: '9.0.x'
+    includePreviewVersions: true
+
+- script: dotnet restore src/Presentation/Nop.Web/Nop.Web.csproj
+  displayName: "Restore"
+
+- script: dotnet build src/Presentation/Nop.Web/Nop.Web.csproj -c Release
+  displayName: "Build"
+
+- script: dotnet publish src/Presentation/Nop.Web/Nop.Web.csproj -c Release -o $(Build.ArtifactStagingDirectory)
+  displayName: "Publish"
+
+- task: AzureRmWebAppDeployment@5
+  displayName: "Deploy"
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(d661f6b6-51be-46ec-a355-52db3499fb73)'
+    appType: 'webApp'
+    WebAppName: 'nopCommerce'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)'
