@@ -21,20 +21,12 @@ steps:
 - script: dotnet publish src/Presentation/Nop.Web/Nop.Web.csproj -c Release -o $(Build.ArtifactStagingDirectory)
   displayName: "Publish"
 
-- task: ArchiveFiles@2
-  displayName: "Generar ZIP"
-  inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
-    includeRootFolder: false
-    archiveType: zip
-    archiveFile: '$(Build.ArtifactStagingDirectory)/nop.zip'
-    replaceExistingArchive: true
-
 - task: AzureRmWebAppDeployment@5
-  displayName: "Despliegue"
+  displayName: "Despliegue archivos sueltos"
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Azure subscription 1(d661f6b6-51be-46ec-a355-52db3499fb73)'
     appType: 'webApp'
     WebAppName: 'nopCommerce'
-    package: '$(Build.ArtifactStagingDirectory)/nop.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)'   # archivos sueltos, NO zip
+    enableCustomDeployment: true
